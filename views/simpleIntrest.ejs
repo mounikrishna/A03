@@ -1,0 +1,30 @@
+<% include header %>
+        <script>
+        
+        function calculated()
+            {
+                p = document.getElementById("p").value;
+                t = document.getElementById("t").value;
+                r = document.getElementById("r").value;
+                result = document.getElementById("result");
+                
+                result.innerHTML = "The interest for the given amount is:" + (p*t*r/100);
+            }
+    
+        </script>
+
+        <div class="container">
+            <h1>Simple Interest</h1>
+
+            Amount: <input id="p"><br/>
+            Rate: <input id="r"><br/>
+            No. of Years: <input id="t"><br/>
+    
+            <button onclick="calculated()">Calculate Interest</button>
+    
+            <p id="result"></p>
+        </div>
+   
+
+<%include footer%>
+
