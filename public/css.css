@@ -92,18 +92,17 @@ span{
 }
 
 li{
-    width: 300px;
+    width: 100px;
 }
 
 .navbar-brand{
-    width: 100px;
+    width: 120px;
     background-color:rgb(0, 10, 0);
-    
 }
 
 main {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 10% 50% 30%;
     background-color: #fff;
     color: #444;
     padding: 1em;

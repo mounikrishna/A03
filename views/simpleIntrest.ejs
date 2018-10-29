@@ -6,19 +6,29 @@
                 p = document.getElementById("p").value;
                 t = document.getElementById("t").value;
                 r = document.getElementById("r").value;
+                if(p==''||t==''||r==''){
+                    alert("Please enter the values");
+                    return;
+                }
+                else if(isNaN(p)||isNaN(t)||isNaN(r)){
+                    alert("Please enter the number values");
+                    return;
+                }
                 result = document.getElementById("result");
-                
-                result.innerHTML = "The interest for the given amount is:" + (p*t*r/100);
+                console.log(p)
+                result.innerHTML = "The interest for the given amount is : " + (p*t*r/100);
+                alert(result.innerHTML);
             }
+            
     
         </script>
 
         <div class="container">
             <h1>Simple Interest</h1>
 
-            Amount: <input id="p"><br/>
-            Rate: <input id="r"><br/>
-            No. of Years: <input id="t"><br/>
+            Amount      :<br> <input id="p"><br/>
+            Rate        :<br> <input id="r"><br/>
+            No. of Years:<br> <input id="t"><br/><br>
     
             <button onclick="calculated()">Calculate Interest</button>
     
