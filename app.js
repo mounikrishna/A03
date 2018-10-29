@@ -35,7 +35,7 @@ app.get('/', function (req, res) {
   res.render('index.ejs')
 })
 
-// 4 http GET /tic-tac-toe
+// 4 http GET 
 app.get('/About', function (req, res) {
   res.render('About.ejs')
 })
@@ -44,13 +44,6 @@ app.get('/About', function (req, res) {
 app.get('/Contact', function (req, res) {
   res.render('Contact.ejs')
 })
-
-
-app.get('/Game', function (req, res) {
-  res.render('Game.ejs')
-})
-
-
 
 app.get('/Home', function (req, res) {
   res.render('Home.ejs')
